@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+<body>
+</head>
+    <header>
+        <h1>Cover letter Creator</h1>
+    </header>
+
+    <div class="main">
+        <div class="fields">
+            <h2>Input</h2>
+
+            <div class="name">
+                <h3>Name</h3>
+                <input type="text" placeholder="First" id="name_first" class="name-field">
+                <input type="text" placeholder="Middle" id="name_middle" class="name-field">
+                <input type="text" placeholder="Last" id="name_last" class="name-field">
+            </div>
+
+            <div class="position">
+                <h3>Position</h3>
+                <input type="text" placeholder="Position" id="job-position" class="position-field">
+                <input type="text" placeholder="Company Name" id="job-company" class="company-field">
+            </div>
+
+            <div class="skills">
+                <h3>Skills</h3>
+                <div id="skill-fields">
+                    <input type="text" placeholder="Skill" id="skill-1" class="skill-field">
+                </div>
+                <button class="skill-add-button" onclick="javascript:skill_add_button_clicked()">➕</button>
+            </div>
+
+            <div class="skills">
+                <h3>Experience</h3>
+                <div id="exp-fields">
+                    <input type="text" placeholder="Experience" id="exp-1" class="exp-field">
+                </div>
+                <button class="exp-add-button" onclick="javascript:exp_add_button_clicked()">➕</button>
+            </div>
+
+            <button id="submit-button" onclick="javascript:submit_data()">Submit</button>
+
+        </div>
+
+
+        <div class="gen-content">
+            <h2>Output</h2>
+            <div id="loader"></div>
+            <textarea name="" id="output-area"></textarea>
+            <button id="copy-button" onclick="javascript:copy_data()">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
